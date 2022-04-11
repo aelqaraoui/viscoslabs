@@ -22,7 +22,6 @@ function Header(props) {
         <Button onClick={props.callbackMyLoans} mx={3}>My Loan</Button>
 
         <Spacer />
-        <Button mx={3}>Home</Button>
         {
         window.walletConnection.isSignedIn() ? (
             <Button onClick={logout} mx={3}>{window.walletConnection.getAccountId()}</Button>
